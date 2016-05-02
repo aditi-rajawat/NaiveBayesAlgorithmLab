@@ -8,12 +8,14 @@ import org.apache.spark.api.java.JavaSparkContext;
  */
 public class NaiveBayesUsingMLlib {
     public static void solution(String path){
+
+        System.err.println("Hello..");
         SparkConf sparkConf = new SparkConf().setAppName("NaiveBayesUsingMLlib");
         JavaSparkContext javaSparkContext = new JavaSparkContext(sparkConf);
 
       //  JavaRDD<LabeledPoint> inputData = MLUtils.loadLibSVMFile(javaSparkContext.sc(), path).toJavaRDD();
 
-        System.out.println("Size of inputData");
+        System.err.println("Size of inputData");
 
     }
 }
